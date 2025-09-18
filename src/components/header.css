@@ -145,5 +145,9 @@
   right: 46px;
 
   width: 26px;
-  text-align: center;
+  text-align: center; 
+}
+
+.orders-link:active{
+  text-decoration:underline;
 }

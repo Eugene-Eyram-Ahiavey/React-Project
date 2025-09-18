@@ -6,6 +6,8 @@ export function OrdersPage(){
 
     return(
     <>
+<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
     <title>Orders</title>
 
 

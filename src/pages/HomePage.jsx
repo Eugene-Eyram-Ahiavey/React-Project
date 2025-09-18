@@ -6,6 +6,8 @@ export function HomePage(){
 
     return (
     <>
+ <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
     <title>HomePage</title>
     
     <Header/>

@@ -5,22 +5,17 @@ import { Header } from '../components/Header.jsx';import './HomePage.css';
 
 
 
-export function HomePage(){
+export function HomePage({cart}){
 const [products, setProducts] = useState([]);
-const [cart, setCart] = useState([]);
 
-useEffect(() => {
-axios.get('/api/products')
-.then((response) => {
-  setProducts(response.data); 
-});
-
-
-axios.get('/api/cart-items')
+  useEffect(() => {
+  axios.get('/api/products')
   .then((response) => {
-    setCart(response.data);
-  })
-}, []);
+    setProducts(response.data); 
+  });
+  
+  }, []);
+
 
   
 

@@ -10,7 +10,8 @@ export function Header({ cart }){
 
   cart.forEach((cartItem) =>{
     totalQuantity += cartItem.quantity;
-    console.log(totalQuantity);
+    // console.log(totalQuantity);
+    // console.log(cart);
   })
     return (
         <>

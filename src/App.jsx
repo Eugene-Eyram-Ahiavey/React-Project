@@ -34,7 +34,7 @@ const [cart, setCart] = useState([]);
       <Route index element={<HomePage cart={cart} loadCart={loadCart}
       />} />
       <Route path="checkout" element={<CheckoutPage cart={cart} 
-      setCart={setCart}
+      setCart={setCart} loadCart={loadCart}
       />} />
       <Route path='orders' element={<OrdersPage cart={cart}/>}/>
       <Route path='tracking/:orderId/:productId' element={<TrackingPage cart={cart}/>} />

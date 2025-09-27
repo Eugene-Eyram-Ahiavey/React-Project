@@ -6,7 +6,7 @@ import { DeliveryDate } from './DeliveryDate';
 
 
 
-export function OrderSummary({ cart, deliveryOptions }){
+export function OrderSummary({ cart, deliveryOptions, loadCart }){
 
     return (
 <div className="order-summary">
@@ -19,7 +19,7 @@ export function OrderSummary({ cart, deliveryOptions }){
             <div className="cart-item-details-grid">
       
               <CartItemDetails cartItem={cartItem}/>
-              <DeliveryOptions deliveryOptions={deliveryOptions} cartItem={cartItem} />
+              <DeliveryOptions deliveryOptions={deliveryOptions} cartItem={cartItem} loadCart={loadCart} />
             </div>
           </div>
             )

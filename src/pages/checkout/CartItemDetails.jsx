@@ -12,11 +12,9 @@ await axios.delete(`api/cart-items/${cartItem.productId}`);
 await loadCart();
   }
 
-  // const updateCartItem = async () => {
-  //   axios.put(`/api/cart-items${cartItem.productId}`, {
-
-  //   })
-  // }
+  const updateCartItem = () => {
+    console.log('updated');
+  }
 
   return (
     <>
@@ -33,8 +31,8 @@ await loadCart();
                   <span>
                     Quantity: <span className="quantity-label">{cartItem.quantity}</span>
                   </span>
-                  <span className="update-quantity-link link-primary" 
-                 
+                  <span className="update-quantity-link link-primary"
+                  onClick={updateCartItem}
                   >
                     Update
                   </span>

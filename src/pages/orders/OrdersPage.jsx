@@ -10,7 +10,7 @@ import { OrdersGrid } from './OrdersGrid.jsx';
 
 
 
-export function OrdersPage({ cart }){
+export function OrdersPage({ cart, loadCart }){
 const [orders, setOrders] = useState([]);
 
 
@@ -36,7 +36,7 @@ fetchOrders();
     <div className="orders-page">
       <div className="page-title">Your Orders</div>
 
-     <OrdersGrid orders={orders}/>
+     <OrdersGrid orders={orders} loadCart={loadCart} cart={cart}/>
     </div>
     </>
     )

@@ -74,4 +74,12 @@ describe("Product component", () => {
 
     expect(loadCart).toHaveBeenCalled();
   });
+
+  // it('select a qantity', () => {
+    
+  // const quantitySelector = screen.getByTestId('quantity-selector');
+  // expect(quantitySelector).toHaveValue('1')
+
+  // });
+  
 });

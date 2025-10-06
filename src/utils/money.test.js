@@ -11,6 +11,18 @@ expect(formatMoney(1999)).toBe('19.99');
 it('displays 2 decimals', () => {
     expect(formatMoney(1090)).toBe('10.90');
     expect(formatMoney(100)).toBe('1.00');
+});
+
+it('works with 0', () => {
+expect(formatMoney(0)).toBe('0.00');
+});
+
+it('works with a negative number -999', () => {
+expect(formatMoney(-999)).toBe('-9.99');
+});
+
+it('works with the negative number, -100', () => {
+    expect(formatMoney(-100)).toBe('-1.00');
 })
 })
 
